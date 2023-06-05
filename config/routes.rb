@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :post_images
   devise_for :users
   get 'homes/about', as: 'about'
   root to: 'homes#top'
